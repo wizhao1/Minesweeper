@@ -51,7 +51,6 @@ public void setBombs()
     if(!bombs.contains(buttons[row][col]))
     {
         bombs.add(buttons[row][col]);
-        System.out.println(row + "," + col);
     }
 }
 
@@ -63,7 +62,6 @@ public void draw ()
     if(isWon())
     {
         displayWinningMessage();
-        System.out.println("aabb");
     }
 }
 
@@ -100,7 +98,6 @@ public void displayLosingMessage()
 {
     //your code here
     gameState = false;
-    System.out.println("aa");
     for(int i = 0; i<NUM_BOMBS; i++)
     {
         bombs.get(i).clicked = true;
